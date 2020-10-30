@@ -2,6 +2,7 @@ const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
 
+//creating global vribeable
 var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
@@ -15,7 +16,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-
+  
     ground = new Ground(600,height,1200,20);
     platform = new Ground(150, 305, 300, 170);
 
